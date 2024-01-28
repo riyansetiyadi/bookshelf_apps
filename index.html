@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bookshelf Apps
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Tambah Buku Baru</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Masukkan Judul Buku</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="author">Masukkan Nama Penulis</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="year">Masukkan Tahun Terbit</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkCompleted">
+                    <label class="form-check-label" for="checkCompleted">
+                        Selesai dibaca?
+                    </label>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn">
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="form-group form-title">
+                <label for="title">Cari Buku</label>
+                <input type="text" id="search" name="search" required>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Belum selesai dibaca</h2>
+            <div class="list-item" id="books">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Selesai dibaca</h2>
+            <div class="list-item" id="completed-books">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="removeDialog">
+        <h2>Apakah anda yakin akan menghapus?</h2>
+        <div class="container-dialog-btn">
+            <button id="removeDialogButton" class="btn btn-alert">Hapus</button>
+            <button id="cancelRemoveDialogButton" class="btn">Tidak</button>
+        </div>
+    </div>
+
+    <div id="editDialog">
+        <h2 class="text-center">Edit Buku</h2>
+        <form class="form" action="#" id="form-edit">
+            <div class="form-group form-title">
+                <label for="title">Edit Judul Buku</label>
+                <input type="text" id="editTitle" name="title" required>
+            </div>
+            <div class="form-group form-title">
+                <label for="author">Edit Nama Penulis</label>
+                <input type="text" id="editAuthor" name="author" required>
+            </div>
+            <div class="form-group form-title">
+                <label for="year">Edit Tahun Terbit</label>
+                <input type="number" id="editYear" name="year" required>
+            </div>
+            <div class="container-dialog-btn">
+                <button id="editDialogButton" class="btn btn-alert">Edit</button>
+                <button id="cancelEditDialogButton" class="btn">Batal</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
