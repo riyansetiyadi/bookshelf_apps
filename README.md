@@ -1,2 +1,1 @@
-# bookshelf_apps
- 
+Rak buku berbasis website yang digunakan sebagai tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula di Dicoding. Mempunyai fitur menambahkan, menghapus, dan mengubah buku. Pengguna juga dapat memindahkan buku antar rak. Website dibuat menggunakan HTML, CSS, Javascript, & Local Storage.
