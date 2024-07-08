@@ -12,4 +12,4 @@ This is a bookshelf web application developed as a submission for the "Belajar M
 - Delete books from the shelf
 - Move books between "Read" and "Unread" shelves
 
-Try now: https://riyansetiyadi.github.io/bookshelf_apps/ (use ctrl + click for open in new tab)
+Try now: <a href="https://riyansetiyadi.github.io/bookshelf_apps/" target="_blank">Visit Bookshelf</a>
